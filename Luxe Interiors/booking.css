@@ -1,0 +1,440 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+.background{
+    width: 100%;
+    height: 430px;
+    background: url(image/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.logo{
+    color: black;
+    font-size: 25px;
+    margin-inline-start: 10px;
+    margin-top: 20px;
+
+}
+
+nav{
+    /* background: #3b3b3b; */
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(34, 34, 34, 0.429);
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+
+}
+nav ul{
+    /* width: 100%; */
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 29px;
+    margin-top: -10px;
+
+}
+nav a{
+    height: 100%;
+    padding: 12px 20px;
+    margin-top: -20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+
+nav a:hover{
+    background-color: #f0f0f0;
+    transition: 0.3s;
+}
+
+.sidebar{
+    position: fixed;
+    top: 10;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    
+}
+.menu-icon svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    left: 140px;
+    cursor: pointer;
+    
+}
+.menu-close svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    cursor: pointer;
+}
+.menu-button{
+    display: none;
+}
+
+.btn{
+    background: linear-gradient(90deg, #9a947d, #87896f);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-block-start: -50px;
+    bottom: 60px;
+    margin-right: 40px;
+    
+
+}
+.hero{
+
+height:380px;
+
+background:
+linear-gradient(#0004,#0004),
+url("living-room.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+align-items:center;
+
+padding:8%;
+
+color:white;
+
+}
+
+
+
+.hero h1{
+
+font-size:50px;
+font-family:Georgia;
+
+margin:20px 0;
+
+}
+
+
+
+.booking{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+padding:50px 8%;
+
+background:#faf7f3;
+
+}
+
+
+
+
+input,select,textarea{
+
+width:100%;
+
+padding:15px;
+
+margin:10px 0 20px;
+
+border:1px solid #ddd;
+
+background:white;
+
+border-radius:8px;
+
+}
+
+
+
+textarea{
+
+height:100px;
+
+}
+
+.form button{
+
+background:#93866b;
+color:white;
+border:0;
+padding:15px 30px;
+cursor:pointer;
+
+}
+
+
+.calendar-box{
+
+border:1px solid #ddd;
+
+padding:20px;
+
+border-radius:10px;
+
+}
+
+
+
+.days,.numbers{
+
+display:grid;
+
+grid-template-columns:repeat(7,1fr);
+
+gap:15px;
+
+margin-top:20px;
+
+}
+
+
+
+.numbers button{
+
+background:none;
+
+color:#333;
+
+padding:10px;
+
+}
+
+
+
+.active{
+
+background:#9b9277!important;
+
+color:white!important;
+
+}
+
+
+
+
+.times{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:15px;
+
+}
+
+
+
+.times button{
+
+background:white;
+
+color:#333;
+
+border:1px solid #ddd;
+
+}
+
+
+
+.services{
+
+margin:30px 8%;
+
+padding:30px;
+
+background:#eee7dc;
+
+border-radius:15px;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+
+
+.expect{
+
+margin:50px 8%;
+
+display:flex;
+
+gap:30px;
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+}
+
+
+
+.expect img{
+
+width:50%;
+
+border-radius:10px;
+
+}
+
+
+
+footer{
+
+background:#9b9277;
+
+color:white;
+
+padding:50px 10%;
+
+text-align:center;
+
+}
+
+.book{
+
+background:#9A947D;
+color:white;
+border:0;
+padding:14px 25px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .menu-icon svg{
+        left: 25px;
+    }
+}
+@media(max-width: 500px){
+    .sidebar{
+        width: 100%;
+        font-size: clamp(1.2rem, 2vw, 3rem);
+    }
+}
+
+
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+height:auto;
+padding:20px;
+
+}
+
+.btn{
+    display: none;
+}
+
+nav{
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+
+.booking{
+
+grid-template-columns:1fr;
+
+}
+
+
+.hero h1{
+font-size:35px;
+
+}
+
+
+
+.services{
+grid-template-columns:1fr;
+
+}
+
+
+
+.expect{
+flex-direction:column;
+
+}
+
+
+
+.expect img{
+width:100%;
+
+}
+
+
+
+.times{
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}

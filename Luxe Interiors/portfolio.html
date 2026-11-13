@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>PortFolio</title>
+</head>
+<body>
+    <nav>
+  <div class="logo">
+    LUXE INTERIORS
+    </div>
+    
+    <ul class="sidebar">
+       <li onclick=hideSidebar()><a href="" class="menu-close"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+</a></li>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="service.html">Service</a></li>
+       <li><a href="portfolio.html">Portfolio</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       
+    </ul>
+    <ul>
+       <li class="hideOnMobile"><a href="index.html">Home</a></li>
+       <li class="hideOnMobile"><a href="service.html">Service</a></li>
+       <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+       <li class="hideOnMobile"><a href="about.html">About</a></li>
+       <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+       <li class="menu-button" onclick=showSidebar()><a href="#" class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+</a></li>
+
+<button class="btn" id="bookBtn">Book a Consultation</button>
+
+</nav>
+<section class="portfolio-page">
+
+
+
+<div class="project-info">
+
+
+<p class="back">
+← Back to Portfolio
+</p>
+
+
+<h1>
+Modern<br>
+Apartment
+</h1>
+
+
+<p class="location">
+📍 New York, USA
+</p>
+
+
+<p class="description">
+
+A contemporary apartment designed with a perfect balance
+of comfort, functionality and modern aesthetics.
+
+</p>
+
+
+
+
+<div class="details">
+
+
+<p>
+🖼 Project Type
+<span>Residential</span>
+</p>
+
+
+<p>
+📅 Year Completed
+<span>2024</span>
+</p>
+
+
+<p>
+▱ Area
+<span>1200 sq ft</span>
+</p>
+
+
+<p>
+🛋 Style
+<span>Modern Minimal</span>
+</p>
+
+
+</div>
+
+
+
+<button class="book" id="bookBtn1">
+Book a Consultation
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="gallery">
+
+
+<img id="mainImage"
+src="image/Modern Apartment.png">
+
+
+
+<div class="thumbs">
+
+
+<img onclick="changeImage(this)"
+src="image/Modern Apartment.png">
+
+
+<img onclick="changeImage(this)"
+src="image/bedroom (2).png">
+
+
+<img onclick="changeImage(this)"
+src="image/kitchen.png">
+
+
+<img onclick="changeImage(this)"
+src="image/bathroom.png">
+
+
+
+</div>
+</div>
+
+</section>
+
+<section class="features">
+
+<div>
+<h3>🛋 Elegant Design</h3>
+<p>Timeless design with comfort and elegance.</p>
+</div>
+
+
+<div>
+<h3>🌿 Premium Materials</h3>
+<p>High quality materials and finishes.</p>
+</div>
+
+
+
+<div>
+<h3>💡 Smart Lighting</h3>
+<p>Modern lighting solutions.</p>
+</div>
+
+
+
+<div>
+<h3>▦ Functional Spaces</h3>
+<p>Spaces optimized for daily living.</p>
+</div>
+
+
+</section>
+
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none' 
+    }
+
+    function changeImage(image){
+
+
+const main =
+document.getElementById("mainImage");
+
+
+main.style.opacity="0";
+
+
+setTimeout(()=>{
+
+
+main.src=image.src;
+
+
+main.style.opacity="1";
+
+
+},300);
+
+
+}
+
+const bookBtn =
+document.getElementById("bookBtn");
+
+bookBtn.addEventListener("click",()=>{
+
+    window.location.href =
+    "booking.html";
+
+
+});
+const bookBtn1 =
+document.getElementById("bookBtn1");
+bookBtn1.addEventListener("click",()=>{
+    window.location.href =
+    "booking.html";
+
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+.background{
+    width: 100%;
+    height: 430px;
+    background: url(image/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.logo{
+    color: black;
+    font-size: 25px;
+    margin-inline-start: 10px;
+    margin-top: 20px;
+
+}
+
+nav{
+    /* background: #3b3b3b; */
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(34, 34, 34, 0.429);
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+
+}
+nav ul{
+    /* width: 100%; */
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 29px;
+    margin-top: -10px;
+
+}
+nav a{
+    height: 100%;
+    padding: 12px 20px;
+    margin-top: -20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+
+nav a:hover{
+    background-color: #f0f0f0;
+    transition: 0.3s;
+}
+
+.sidebar{
+    position: fixed;
+    top: 10;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    
+}
+.menu-icon svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    left: 140px;
+    cursor: pointer;
+    
+}
+.menu-close svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    cursor: pointer;
+}
+.menu-button{
+    display: none;
+}
+
+.btn{
+    background: linear-gradient(90deg, #9a947d, #87896f);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-block-start: -50px;
+    bottom: 60px;
+    margin-right: 40px;
+    
+
+}
+
+.btn{
+
+background:#91866d;
+color:white;
+border:none;
+padding:15px 25px;
+cursor:pointer;
+
+}
+
+
+
+.hero{
+
+height:430px;
+display:flex;
+align-items:center;
+padding:8%;
+color:white;
+z-index: 0;
+}
+
+
+
+.hero-text{
+max-width:500px;
+}
+
+
+
+h1{
+
+font-family:serif;
+font-size:55px;
+
+}
+
+
+
+.line{
+
+width:40px;
+height:2px;
+background:#9b8c70;
+margin:20px 0;
+
+}
+
+
+
+.story{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+padding:70px 8%;
+
+}
+
+
+.story img{
+
+width:100%;
+border-radius:8px;
+
+}
+
+
+
+h2{
+
+font-family:serif;
+font-size:40px;
+
+}
+
+
+
+.features,
+.cards,
+.team-grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+margin-top:40px;
+
+}
+
+
+.features i,
+.cards i{
+
+font-size:35px;
+color:#91866d;
+
+}
+
+
+
+.values{
+
+padding:70px 8%;
+text-align:center;
+
+}
+
+
+
+.team{
+
+padding:70px 8%;
+text-align:center;
+
+}
+
+
+.team-grid{
+
+grid-template-columns:repeat(4,1fr);
+
+}
+
+
+
+.member{
+
+background:white;
+border-radius:10px;
+overflow:hidden;
+
+}
+
+
+
+.member img{
+
+width:100%;
+
+}
+
+
+
+.testimonial{
+
+padding:80px;
+text-align:center;
+
+}
+
+button {
+background:#827963;
+color:white;
+border:none;
+padding:15px 30px;
+cursor:pointer;
+border-radius:4px;
+}
+
+footer{
+
+background:#cbb98f;
+color:white;
+padding:60px 10%;
+text-align:center;
+
+}
+
+.btn2{
+background:#91866d;
+color:white;
+border:none;
+padding:15px 25px;
+cursor:pointer;
+margin-top:-9px;
+}
+
+
+.contact{
+
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:30px;
+
+}
+
+
+
+/* animation */
+
+.animate{
+
+opacity:0;
+transform:translateY(80px);
+transition:1s ease;
+
+}
+
+
+.animate.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+header{
+
+flex-direction:column;
+height:auto;
+padding:20px;
+
+}
+
+.btn{
+    display: none;
+}
+
+nav{
+
+margin:0 0;
+
+}
+
+
+.hero{
+
+height:500px;
+
+}
+
+
+h1{
+
+font-size:38px;
+
+}
+
+
+.story{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.features,
+.cards,
+.team-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.contact{
+
+flex-direction:column;
+
+}
+
+
+}
+
+
+
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .menu-icon svg{
+        left: 25px;
+    }
+}
+@media(max-width: 500px){
+    .sidebar{
+        width: 100%;
+        font-size: clamp(1.2rem, 2vw, 3rem);
+    }
+}

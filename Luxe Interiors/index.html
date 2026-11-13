@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Luxe Website</title>
+</head>
+<body>
+    <section class="background">
+ <nav>
+  <div class="logo">
+    LUXE INTERIORS
+    </div>
+    
+    <ul class="sidebar">
+       <li onclick=hideSidebar()><a href="" class="menu-close"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+</a></li>
+       <li><a href="">Home</a></li>
+       <li><a href="service.html">Service</a></li>
+       <li><a href="portfolio.html">Portfolio</a></li>
+       <li><a href="about.html">About</a></li>
+       <li><a href="contact.html">Contact</a></li>
+       
+    </ul>
+    <ul>
+       <li class="hideOnMobile"><a href="">Home</a></li>
+       <li class="hideOnMobile"><a href="service.html">Service</a></li>
+       <li class="hideOnMobile"><a href="portfolio.html">Portfolio</a></li>
+       <li class="hideOnMobile"><a href="about.html">About</a></li>
+       <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+       <li class="menu-button" onclick=showSidebar()><a href="#" class="menu-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+</a></li>
+
+<button class="btn" id="bookBtn">Book a Consultation</button>
+</nav>
+
+<div class="content">
+<h1>Elevated Living Space, Timeless Design</h1>
+<button class="btn2" id="bookBtn1">Book a Consultation</button>
+
+</div>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <div class="icon">
+                🛋️
+            </div>
+            <h3>Interior Design</h3>
+            <p>
+                Full-service interior design tailored 
+                to your style, needs, and vision.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="icon">
+                ⌘
+            </div>
+            <h3>Space Planning</h3>
+            <p>
+                Smart layouts that maximize 
+                functionality, flow, and comfort.
+            </p>
+        </div>
+
+
+        <div class="service-card">
+            <div class="icon">
+                🪑
+            </div>
+            <h3>Custom Furniture</h3>
+            <p>
+                Bespoke furniture pieces crafted 
+                to complement your space.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="portfolio">
+
+    <h1>Our Portfolio</h1>
+
+    <div class="divider"></div>
+
+    <p class="subtitle">
+        Discover Our Latest Projects
+    </p>
+
+
+    <div class="portfolio-container">
+
+
+        <div class="portfolio-card">
+
+            <img src="image/Modern Apartment.png">
+
+            <div class="card-content">
+
+                <h3>Modern Apartment</h3>
+
+                <p>
+                A beautiful modern apartment with
+                timeless interior design.
+                </p>
+
+                <button id="portfolioBtn">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="portfolio-card">
+
+            <img src="image/Luxury Penthouse.png">
+
+            <div class="card-content">
+
+                <h3>Luxury Penthouse</h3>
+
+                <p>
+                Elegant penthouse with premium
+                furniture and finishes.
+                </p>
+
+                <button id="portfolioBtn">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="portfolio-card">
+
+            <img src="image/Elegant Townhouse.png">
+
+            <div class="card-content">
+
+                <h3>Elegant Townhouse</h3>
+
+                <p>
+                A sophisticated space designed
+                for comfort and luxury.
+                </p>
+
+                <button id="portfolioBtn">
+                    View Project
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<section class="process">
+
+    <h2>Our Design Process</h2>
+    <p class="small-title">How We Work</p>
+
+
+    <div class="process-container">
+
+        <div class="step">
+            <span>01</span>
+            <h3>Consultation</h3>
+            <p>
+                Understand your vision and discuss your project needs.
+            </p>
+        </div>
+
+
+        <div class="step">
+            <span>02</span>
+            <h3>Concept Design</h3>
+            <p>
+                Create ideas and design concepts for your space.
+            </p>
+        </div>
+
+
+        <div class="step">
+            <span>03</span>
+            <h3>Development</h3>
+            <p>
+                Refine details, materials and final design plans.
+            </p>
+        </div>
+
+
+        <div class="step">
+            <span>04</span>
+            <h3>Installation</h3>
+            <p>
+                Bring your dream interior design to life.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="testimonials">
+
+    <h2>Client Testimonials</h2>
+
+    <div class="quote">
+        “
+    </div>
+
+
+    <p id="review">
+        Working with Luxe Interiors was an exceptional experience.
+        Our home looks absolutely stunning.
+    </p>
+
+
+    <h4 id="client">
+        — Sarah M.
+    </h4>
+
+    <p id="stars"></p>
+
+
+    <button class="buttons" onclick="changeReview()">
+        Next Review
+    </button>
+
+   <footer class="footer" id="contact">
+    <div class="footer-line"></div>
+    <h1>Get In Touch</h1>
+
+    <p class="footer-sub">
+        Start Your Design Journey Today
+    </p>
+
+
+
+    <div class="footer-content">
+
+
+        <div class="contact-info">
+
+            <p>
+                <span class="footer-icon">✉</span>
+                Email: info@luxeinteriors.com
+            </p>
+
+            <p>
+                <span class="footer-icon">☎</span>
+                Phone: (123) 456-7890
+            </p>
+
+        </div>
+
+        <button id="bookBtn2">
+            Book a Consultation
+        </button>
+
+
+    </div>
+
+</footer>
+
+</section>
+ <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none' 
+    }
+
+    // const buttons = document.querySelectorAll("buttons");
+    // buttons.forEach(buttons=>{
+    // buttons.addEventListener("click",()=>{
+    // alert("Project details coming soon");
+    // });
+    // });
+
+    const reviews = [
+
+    {
+    text:"Working with Luxe Interiors was an exceptional experience. Our home looks absolutely stunning.",
+    name:"— Sarah M.",
+    rating:"★★★★★"
+    },
+
+    {
+    text:"The team transformed our space into a beautiful and comfortable home.",
+    name:"— Daniel K.",
+    rating:"★★★★☆"
+    },
+
+    {
+    text:"Professional service with amazing attention to every detail.",
+    name:"— Emily R.",
+    rating:"★★★★★"
+
+    }
+
+    ];
+
+
+    let index = 0;
+
+
+    function changeReview(){
+
+
+    index++;
+
+
+    if(index >= reviews.length){
+
+    index = 0;
+
+    }
+
+
+    document.getElementById("review").innerText =
+    reviews[index].text;
+
+
+    document.getElementById("client").innerText =
+    reviews[index].name;
+
+    document.getElementById("stars").innerText =
+    reviews[index].rating;
+    }
+   const sections = document.querySelectorAll(
+".service-card, .portfolio-card, .step, .testimonials"
+);
+
+
+
+window.addEventListener("scroll",()=>{
+
+
+sections.forEach(section=>{
+
+
+let position =
+section.getBoundingClientRect().top;
+
+
+if(position < window.innerHeight - 120){
+
+
+section.style.animationPlayState="running";
+
+
+}
+
+
+});
+
+
+});
+const animatedSections = document.querySelectorAll(
+    ".service-card, .portfolio-card, .step, .testimonials"
+);
+
+
+function startAnimation(){
+
+    animatedSections.forEach(section=>{
+
+
+        const sectionPosition =
+        section.getBoundingClientRect().top;
+
+
+        const screenHeight =
+        window.innerHeight;
+
+
+
+        if(sectionPosition < screenHeight - 120){
+
+
+            section.style.animationPlayState = "running";
+
+
+        }
+
+
+    });
+
+}
+
+window.addEventListener(
+    "scroll",
+    startAnimation
+);
+
+
+// Run when page loads
+
+window.addEventListener(
+    "load",
+    startAnimation
+);
+
+const serviceCards =
+document.querySelectorAll(".service-card");
+
+
+serviceCards.forEach(card=>{
+
+
+    card.addEventListener("mouseenter",()=>{
+
+        card.style.transform =
+        "translateY(-12px)";
+
+    });
+
+
+
+    card.addEventListener("mouseleave",()=>{
+
+        card.style.transform =
+        "translateY(0)";
+
+    });
+
+
+});
+
+const portfolioCards =
+document.querySelectorAll(".portfolio-card");
+
+
+
+portfolioCards.forEach(card=>{
+
+
+card.addEventListener("click",()=>{
+
+
+    card.classList.toggle("active");
+
+
+});
+
+
+});
+
+const testimonial =
+document.querySelector(".testimonials");
+
+
+testimonial.style.animation = "none";
+
+
+setTimeout(()=>{
+
+testimonial.style.animation =
+"testimonialPop .8s ease forwards";
+
+
+},50);
+
+ 
+
+const observerSections = document.querySelectorAll(
+    ".content, .service-card, .portfolio-card, .step, .testimonials, .footer"
+);
+
+
+
+const observer = new IntersectionObserver((entries)=>{
+
+
+    entries.forEach(entry=>{
+
+
+        if(entry.isIntersecting){
+
+
+            entry.target.classList.add("animate");
+
+
+        }else{
+
+
+            // remove this if you want animation only once
+            entry.target.classList.remove("animate");
+
+
+        }
+
+
+    });
+
+
+},
+{
+    threshold:0.2
+});
+
+
+
+sections.forEach(section=>{
+
+    observer.observe(section);
+
+});
+
+
+const bookBtn =
+document.getElementById("bookBtn");
+bookBtn.addEventListener("click",()=>{
+    window.location.href =
+    "booking.html";
+
+
+});
+
+const bookBtn1 =
+document.getElementById("bookBtn1");
+bookBtn1.addEventListener("click",()=>{
+    window.location.href =
+    "booking.html";
+
+
+});
+
+const bookBtn2 =
+document.getElementById("bookBtn2");
+bookBtn2.addEventListener("click",()=>{
+    window.location.href =
+    "booking.html";
+
+});
+
+const portfolioBtn = document.getElementById("portfolioBtn");
+portfolioBtn.addEventListener("click",()=>{
+
+    window.location.href =
+    "portfolio.html";
+
+});
+
+
+</script>
+</body>
+</html>

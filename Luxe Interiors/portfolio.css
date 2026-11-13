@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.logo{
+    color: black;
+    font-size: 25px;
+    margin-inline-start: 10px;
+    margin-top: 20px;
+
+}
+
+nav{
+    /* background: #3b3b3b; */
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(34, 34, 34, 0.429);
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+
+}
+nav ul{
+    /* width: 100%; */
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li{
+    height: 29px;
+    margin-top: -10px;
+
+}
+nav a{
+    height: 100%;
+    padding: 12px 20px;
+    margin-top: -20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+
+nav a:hover{
+    background-color: #f0f0f0;
+    transition: 0.3s;
+}
+
+.sidebar{
+    position: fixed;
+    top: 10;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    
+}
+.menu-icon svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 5px;
+    left: 140px;
+    cursor: pointer;
+    
+}
+.menu-close svg{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -20px;
+    left: 10px;
+    cursor: pointer;
+}
+.menu-button{
+    display: none;
+}
+
+.btn{
+    background: linear-gradient(90deg, #9a947d, #87896f);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin-block-start: -50px;
+    bottom: 60px;
+    margin-right: 40px;
+    
+
+}
+.portfolio-page{
+
+display:grid;
+
+grid-template-columns:35% 65%;
+
+padding:50px 7%;
+
+gap:40px;
+
+}
+
+
+
+.project-info{
+
+
+animation:slideLeft .8s ease;
+
+}
+
+
+
+.back{
+
+margin-bottom:40px;
+
+color:#777;
+
+}
+
+
+
+.project-info h1{
+
+font-size:60px;
+font-family:Georgia;
+margin-bottom:20px;
+
+}
+
+
+
+.location{
+
+margin-bottom:30px;
+
+}
+
+
+
+.description{
+
+line-height:1.8;
+color:#6c6258;
+
+}
+
+
+
+
+.details{
+
+background:#EFE8DE;
+
+padding:25px;
+
+border-radius:15px;
+
+margin:30px 0;
+
+}
+
+
+
+.details p{
+
+display:flex;
+justify-content:space-between;
+
+margin:15px 0;
+
+}
+
+
+
+
+.gallery{
+
+animation:zoomIn .8s ease;
+
+}
+
+
+
+.gallery>img{
+
+width:100%;
+height:480px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+}
+
+
+
+.thumbs{
+
+display:flex;
+gap:15px;
+
+margin-top:20px;
+
+}
+
+
+
+.thumbs img{
+
+width:23%;
+height:120px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+
+
+.thumbs img:hover{
+
+transform:translateY(-8px);
+
+}
+
+
+
+
+.features{
+
+
+margin:0 7% 60px;
+
+background:#EFE8DE;
+
+border-radius:20px;
+
+padding:30px;
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:20px;
+
+}
+
+
+
+.features p{
+
+margin-top:15px;
+color:#756B61;
+
+}
+
+
+
+
+@keyframes slideLeft{
+
+
+from{
+
+opacity:0;
+transform:translateX(-50px);
+
+}
+
+
+to{
+
+opacity:1;
+transform:translateX(0);
+
+}
+
+
+}
+
+
+
+
+@keyframes zoomIn{
+
+
+from{
+
+opacity:0;
+transform:scale(.9);
+
+}
+
+
+to{
+
+opacity:1;
+transform:scale(1);
+
+}
+
+
+}
+
+.book{
+
+background:#9A947D;
+color:white;
+border:0;
+padding:14px 25px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+
+@media(max-width:768px){
+
+
+header{
+flex-direction:column;
+height:auto;
+padding:20px;
+
+}
+
+.btn{
+    display: none;
+}
+
+nav{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+
+
+.portfolio-page{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.project-info h1{
+
+font-size:40px;
+
+}
+
+
+
+.gallery>img{
+height:300px;
+
+}
+
+
+
+.features{
+grid-template-columns:1fr;
+
+}
+
+
+}
+@media(max-width: 1000px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+    .menu-icon svg{
+        left: 25px;
+    }
+}
+@media(max-width: 500px){
+    .sidebar{
+        width: 100%;
+        font-size: clamp(1.2rem, 2vw, 3rem);
+    }
+}
